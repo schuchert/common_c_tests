@@ -18,7 +18,6 @@ TEST(linked_list, initial_size_is_0) {
 	CHECK(0 == linked_list_size(list));
 }
 
-void *list_node_data(list_node *node);
 TEST(linked_list, last_found_correctly) {
 	linked_list_add(list, (char*)"A");
 	linked_list_add(list, (char*)"B");
@@ -30,8 +29,6 @@ TEST(linked_list, adding_increments_size) {
 	linked_list_add(list, (char*)"");
 	CHECK(1 == linked_list_size(list));
 }
-
-void linked_list_end(list_iterator *iter);
 
 TEST(linked_list, can_iterate_over_list) {
 	linked_list_add(list, (char*)"hello");
