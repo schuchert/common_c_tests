@@ -25,12 +25,14 @@
 							<tool command="/opt/local/bin/g++&#10;" id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug.1081899880" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug">
 								<option id="macosx.cpp.link.option.libs.941580235" name="Libraries (-l)" superClass="macosx.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="CppUTest"/>
+									<listOptionValue builtIn="false" value="gcov"/>
 									<listOptionValue builtIn="false" value="common_c"/>
 								</option>
 								<option id="macosx.cpp.link.option.paths.1342736695" name="Library search path (-L)" superClass="macosx.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/Users/schuchert/src/CppUTest2_3/lib"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/common_c/Debug}&quot;"/>
 								</option>
+								<option id="macosx.cpp.link.option.flags.236168806" superClass="macosx.cpp.link.option.flags" value=" -fprofile-arcs -ftest-coverage" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.macosx.cpp.linker.input.424926156" superClass="cdt.managedbuild.tool.macosx.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -47,11 +49,13 @@
 									<listOptionValue builtIn="false" value="/Users/schuchert/src/CppUTest2_3/include"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/common_c}&quot;"/>
 								</option>
+								<option id="gnu.cpp.compiler.option.other.other.283203779" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1176232237" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool command="/opt/local/bin/gcc&#10;" id="cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug.1018074715" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug">
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.macosx.exe.debug.option.optimization.level.1074932345" name="Optimization Level" superClass="gnu.c.compiler.macosx.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.macosx.exe.debug.option.debugging.level.1879635521" name="Debug Level" superClass="gnu.c.compiler.macosx.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.2064979834" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1079652887" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 						</toolChain>
