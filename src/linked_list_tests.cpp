@@ -51,3 +51,10 @@ TEST(linked_list, open_up_opaque_structure) {
 	test_list_node *node = (test_list_node*)(linked_list_last(list));
 	CHECK_EQUAL_C_STRING("hello", node->data);
 }
+
+#include <stdlib.h>
+TEST(linked_list, auto_releases_memory_with_function_pointer) {
+	linked_list_add(list, malloc(20));
+	linked_list_release_destroy(list, free);
+	list = NULL;
+}
