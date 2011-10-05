@@ -40,3 +40,14 @@ TEST(linked_list, can_iterate_over_list) {
 	CHECK(0 == linked_list_has_next(iter));
 	linked_list_end(iter);
 }
+
+struct test_list_node {
+	char *data;
+	list_node *next;
+};
+
+TEST(linked_list, open_up_opaque_structure) {
+	linked_list_add(list, (char*)"hello");
+	test_list_node *node = (test_list_node*)(linked_list_last(list));
+	CHECK_EQUAL_C_STRING("hello", node->data);
+}
