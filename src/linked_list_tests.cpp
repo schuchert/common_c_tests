@@ -46,6 +46,8 @@ struct test_list_node {
 	list_node *next;
 };
 
+typedef void* (*f_ptr)(int, void(*)(void));
+
 TEST(linked_list, open_up_opaque_structure) {
 	linked_list_add(list, (char*)"hello");
 	test_list_node *node = (test_list_node*)(linked_list_last(list));

@@ -22,17 +22,17 @@
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.macosx.exe.debug.1770207636" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.macosx.exe.debug"/>
 							<builder buildPath="${workspace_loc:/common_c_tests/Debug}" id="cdt.managedbuild.target.gnu.builder.macosx.exe.debug.1315307381" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.macosx.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.macosx.c.linker.macosx.exe.debug.733764123" name="MacOS X C Linker" superClass="cdt.managedbuild.tool.macosx.c.linker.macosx.exe.debug"/>
-							<tool command="/opt/local/bin/g++&#10;" id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug.1081899880" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug">
+							<tool command="/opt/local/bin/g++" id="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug.1081899880" name="MacOS X C++ Linker" superClass="cdt.managedbuild.tool.macosx.cpp.linker.macosx.exe.debug">
 								<option id="macosx.cpp.link.option.libs.941580235" name="Libraries (-l)" superClass="macosx.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="CppUTest"/>
 									<listOptionValue builtIn="false" value="gcov"/>
 									<listOptionValue builtIn="false" value="common_c"/>
 								</option>
 								<option id="macosx.cpp.link.option.paths.1342736695" name="Library search path (-L)" superClass="macosx.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="/Users/schuchert/src/CppUTest2_3/lib"/>
+									<listOptionValue builtIn="false" value="${CppUTest}/lib"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/common_c/Debug}&quot;"/>
 								</option>
-								<option id="macosx.cpp.link.option.flags.236168806" superClass="macosx.cpp.link.option.flags" value=" -fprofile-arcs -ftest-coverage" valueType="string"/>
+								<option id="macosx.cpp.link.option.flags.236168806" name="Linker flags" superClass="macosx.cpp.link.option.flags" value=" -fprofile-arcs -ftest-coverage" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.macosx.cpp.linker.input.424926156" superClass="cdt.managedbuild.tool.macosx.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -46,7 +46,7 @@
 								<option id="gnu.cpp.compilermacosx.exe.debug.option.optimization.level.1610089839" name="Optimization Level" superClass="gnu.cpp.compilermacosx.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.macosx.exe.debug.option.debugging.level.190939844" name="Debug Level" superClass="gnu.cpp.compiler.macosx.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1418935543" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/Users/schuchert/src/CppUTest2_3/include"/>
+									<listOptionValue builtIn="false" value="${CppUTest}/include"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/common_c}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.283203779" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fprofile-arcs -ftest-coverage" valueType="string"/>
