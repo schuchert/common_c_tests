@@ -18,6 +18,19 @@ TEST(linked_list, initial_size_is_0) {
 	CHECK(0 == linked_list_size(list));
 }
 
+#include <string.h>
+int string_matches(const void* current, const void *expected) {
+	return strcmp((char*)current, (char*)expected) == 0;
+}
+
+TEST(linked_list, find_with_function) {
+	linked_list_add(list, (char*)"A");
+	linked_list_add(list, (char*)"B");
+	linked_list_add(list, (char*)"C");
+	void* found = linked_list_find(list, string_matches, "B");
+	CHECK(found != NULL);
+}
+
 TEST(linked_list, last_found_correctly) {
 	linked_list_add(list, (char*)"A");
 	linked_list_add(list, (char*)"B");
